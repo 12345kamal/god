@@ -1,8 +1,11 @@
 #!/bin/bash
 
-sudo user@kamalendra2.mylabserver.com
+sudo scp main.tf user@kamalendra2.mylabserver.com:/docker 
 
-sudo cd /docker
+sudo ssh user@kamalendra2.mylabserver.com
+
+cd /docker
+
 
 # install docker plugins
 terraform init
