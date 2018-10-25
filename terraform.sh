@@ -9,5 +9,8 @@ terraform init
 terraform plan
 
 # Build docker
-terraform apply
+terraform apply -auto-approve
+
+# to cross check
+docker ps
 
