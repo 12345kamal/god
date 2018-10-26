@@ -3,13 +3,13 @@
 cd /var/lib/jenkins/workspace/GITHUB/jenkinsgit/
 
 # install docker plugins
-terraform init
+/var/lib/jenkins/terraform init
 
 # check terraform plan
-terraform plan
+/var/lib/jenkins/terraform plan
 
 # Build docker
-terraform apply -auto-approve
+/var/lib/jenkins/terraform apply -auto-approve
 
 # to cross check
 docker ps
